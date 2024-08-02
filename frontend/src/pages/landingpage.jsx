@@ -176,7 +176,6 @@ const LandingPage = ({ selectedSection }) => {
         <div className="content">
           <section id="gallery" className="image__gallery section">
             <h2>Gallery</h2>
-            <p>Content for Gallery section.</p>
             <div className="image__gallery">
               <PhotoAlbum 
                 photos={photos} 
