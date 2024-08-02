@@ -1,0 +1,70 @@
+.landing-page {
+  display: flex;
+  min-height: 100vh;
+}
+
+.content {
+  margin-left: 200px; /* Match the navbar width */
+  padding: 20px;
+  flex-grow: 1; /* Allow content to grow to fill the space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.section {
+  max-width: 1200px; /* Keep the text within readable bounds */
+  padding: 100px;
+  text-align: center;
+  width: 100%;
+  border: 0;
+}
+
+.name1 {
+  font-size: xx-large;
+}
+
+.p{
+  text-align: left;
+}
+
+.no_bullet_point{
+  list-style-type: none;
+}
+
+li{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile_image {
+  width: 30%;
+  height: 30%;
+  border-radius: 10%;
+  object-fit: cover; 
+}
+
+.image {
+  &__gallery {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    &__gallery {
+      margin-top: 1rem;
+      margin-left: 1.75rem;
+      margin-right: 1.75rem;
+    }
+  }
+
+  .content {
+    margin-left: 0; /* Remove left margin for smaller screens */
+    width: 100%; /* Use full width */
+  }
+}

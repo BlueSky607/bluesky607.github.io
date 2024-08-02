@@ -23,5 +23,11 @@ export default {
             title: 'Year',
             type: 'string',
         },
+        {
+            name: "order",
+            title: "Order",
+            type: "number",
+            description: "Displaying order from top to bottom",
+        },
     ],
 }

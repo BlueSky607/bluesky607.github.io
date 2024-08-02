@@ -1,5 +1,5 @@
 export default {
-    name: "gallary",
+    name: "gallery",
     title: "Gallery",
     type: "document",
     fields: [

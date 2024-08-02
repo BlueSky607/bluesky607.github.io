@@ -10,15 +10,27 @@ export default {
             description: "Publication Title",
         },
         {
-            name: 'date',
-            title: 'Published Date',
-            type: 'date',
+            name: 'year',
+            title: 'Published Year',
+            type: 'string',
         },
         {
-            name: 'category',
-            title: 'Published Category',
-            type: 'string',
-            description: "Category of the publication (구분)"
+            name: "order",
+            title: "Order",
+            type: "number",
+            description: "Displaying order from top to bottom",
+        },
+        {
+            name: "author",
+            title: "Author",
+            type: "string",
+            description: "People who helped in this publication",
+        },
+        {
+            name: "journal",
+            title: "Journal",
+            type: "string",
+            description: "발행처",
         },
     ],
 }
