@@ -6,7 +6,8 @@ import './landingpage.scss';
 import {PortableText} from '@portabletext/react';
 
 // Gallery Related Packages
-import PhotoAlbum from "react-photo-album";
+// import PhotoAlbum from "react-photo-album";
+import Gallery from "react-photo-gallery";
 import {getImageDimensions} from '@sanity/asset-utils'
 
 const LandingPage = ({ selectedSection }) => {
@@ -76,7 +77,6 @@ const LandingPage = ({ selectedSection }) => {
     .fetch(query)
     .then((publicationData) => {
       setpublication(publicationData);
-      console.log(publicationData);
     });
   }, []);
 
@@ -174,18 +174,11 @@ const LandingPage = ({ selectedSection }) => {
       )}
       {selectedSection === 'gallery' && (
         <div className="content">
-          <section id="gallery" className="image__gallery section">
+          <section id="gallery" className="section">
             <h2>Gallery</h2>
             <div className="image__gallery">
-              <PhotoAlbum 
-                photos={photos} 
-                layout="masonry" 
-                renderPhoto={props => (
-                  <a href={props.photo.link} style={props.wrapperStyle} target="_blank" rel="noreferrer">
-                    {props.renderDefaultPhoto(props)}
-                  </a>
-                )}
-              />
+              <Gallery
+              photos={photos}/>
             </div>
           </section>
         </div>
