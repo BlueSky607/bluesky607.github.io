@@ -165,7 +165,7 @@ const LandingPage = ({ selectedSection }) => {
             <ul className="no_bullet_point">
               {publication.map((article, index) => (
                 <li key={index} className="p">
-                  {article.author}, <strong>{article.name}</strong>, {article.journal}, {article.year}
+                  {article.author}, <strong><a href={article.link} target="_blank">{article.name}</a></strong>, {article.journal}, {article.year}
                 </li>
               ))}
             </ul>

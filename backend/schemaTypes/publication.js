@@ -32,5 +32,11 @@ export default {
             type: "string",
             description: "발행처",
         },
+        {
+            name: "link",
+            title: "Link",
+            type: "url",
+            description: "URL to the publication",
+        }
     ],
 }
